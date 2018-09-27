@@ -1,0 +1,138 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:2:1-37:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\f158e80dee7c7bf1f0cf574d40a98d03\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\3777acd49a47ef09e8960050663e6d69\AndroidManifest.xml:2:1-11:12
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\rxandroid-2.0.2.aar\7055bb94e9c345f35fc5f175b154a018\AndroidManifest.xml:15:1-21:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\0718d9e4e7a758c77a4c8e583b56abe2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\ee6fc30b12a011b5aac55481200140d8\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\ff2c0033ed22f20d15b21155cc45e50a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\e27eacc202ab3ee4cd531c5460758d54\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\1c169e819e17709303300c009f91be5d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\0ba0d93f8f79d23f73fe7613b0e1b83c\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\0049e59c9a11380636d5ad5b86dd0eae\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\867a526d5fb7d292c6f37d153c5a8a6c\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\49c57619a29581691c583258bf8b2f93\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\25bce29637cff618311dfb13a0be2d5c\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:2:1-37:12
+	package
+		ADDED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:3:5-49
+		INJECTED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml
+		INJECTED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml
+		ADDED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:2:1-37:12
+		INJECTED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml
+		ADDED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:2:1-37:12
+		INJECTED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:6:5-80
+	android:name
+		ADDED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:6:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:7:22-77
+uses-permission#android.permission.CAMERA
+ADDED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:8:5-64
+	android:name
+		ADDED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:8:22-62
+application
+ADDED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:10:5-35:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\3777acd49a47ef09e8960050663e6d69\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\3777acd49a47ef09e8960050663e6d69\AndroidManifest.xml:9:5-20
+	android:supportsRtl
+		ADDED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:15:9-35
+	android:label
+		ADDED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:13:9-41
+	android:roundIcon
+		ADDED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:14:9-54
+	android:icon
+		ADDED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:12:9-43
+	android:allowBackup
+		ADDED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:11:9-35
+	android:theme
+		ADDED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:16:9-40
+provider#android.support.v4.content.FileProvider
+ADDED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:18:9-26:20
+	android:grantUriPermissions
+		ADDED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:22:13-47
+	android:authorities
+		ADDED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:20:13-78
+	android:exported
+		ADDED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:21:13-37
+	android:name
+		ADDED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:19:13-67
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:23:13-25:54
+	android:resource
+		ADDED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:25:17-51
+	android:name
+		ADDED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:24:17-67
+activity#com.example.gcrown.textrecognition.module.MainActivity
+ADDED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:28:9-34:20
+	android:name
+		ADDED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:28:19-54
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:29:13-33:29
+action#android.intent.action.MAIN
+ADDED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:30:17-69
+	android:name
+		ADDED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:30:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:32:17-77
+	android:name
+		ADDED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml:32:27-74
+uses-sdk
+INJECTED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml
+INJECTED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\f158e80dee7c7bf1f0cf574d40a98d03\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\f158e80dee7c7bf1f0cf574d40a98d03\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\3777acd49a47ef09e8960050663e6d69\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\3777acd49a47ef09e8960050663e6d69\AndroidManifest.xml:5:5-7:41
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\rxandroid-2.0.2.aar\7055bb94e9c345f35fc5f175b154a018\AndroidManifest.xml:19:5-43
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\rxandroid-2.0.2.aar\7055bb94e9c345f35fc5f175b154a018\AndroidManifest.xml:19:5-43
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\0718d9e4e7a758c77a4c8e583b56abe2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\0718d9e4e7a758c77a4c8e583b56abe2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\ee6fc30b12a011b5aac55481200140d8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\ee6fc30b12a011b5aac55481200140d8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\ff2c0033ed22f20d15b21155cc45e50a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\ff2c0033ed22f20d15b21155cc45e50a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\e27eacc202ab3ee4cd531c5460758d54\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\e27eacc202ab3ee4cd531c5460758d54\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\1c169e819e17709303300c009f91be5d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\1c169e819e17709303300c009f91be5d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\0ba0d93f8f79d23f73fe7613b0e1b83c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\0ba0d93f8f79d23f73fe7613b0e1b83c\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\0049e59c9a11380636d5ad5b86dd0eae\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\0049e59c9a11380636d5ad5b86dd0eae\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\867a526d5fb7d292c6f37d153c5a8a6c\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\867a526d5fb7d292c6f37d153c5a8a6c\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\49c57619a29581691c583258bf8b2f93\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\49c57619a29581691c583258bf8b2f93\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\25bce29637cff618311dfb13a0be2d5c\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\GCrown\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\25bce29637cff618311dfb13a0be2d5c\AndroidManifest.xml:20:5-44
+INJECTED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml
+INJECTED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml
+		ADDED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml
+		INJECTED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml
+		ADDED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml
+		INJECTED from C:\AndroidStudioProjects\TextRecognition\app\src\main\AndroidManifest.xml
