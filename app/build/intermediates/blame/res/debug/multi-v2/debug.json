@@ -48,38 +48,6 @@
             ]
         },
         {
-            "outputFile": "C:\\AndroidStudioProjects\\TextRecognition\\app\\build\\intermediates\\res\\merged\\debug\\values-en-rIN_values-en-rIN.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\GCrown\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\f158e80dee7c7bf1f0cf574d40a98d03\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,209,309,417,501,601,716,793,869,951,1054,1158,1257,1362,1465,1569,1725,1825",
-                        "endColumns": "103,99,107,83,99,114,76,75,81,102,103,98,104,102,103,155,99,81",
-                        "endOffsets": "204,304,412,496,596,711,788,864,946,1049,1153,1252,1357,1460,1564,1720,1820,1902"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\GCrown\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\0ba0d93f8f79d23f73fe7613b0e1b83c\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "1907",
-                        "endColumns": "100",
-                        "endOffsets": "2003"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "C:\\AndroidStudioProjects\\TextRecognition\\app\\build\\intermediates\\res\\merged\\debug\\values-ms_values-ms.arsc.flat",
             "map": [
                 {
@@ -107,6 +75,38 @@
                         "startOffsets": "1945",
                         "endColumns": "100",
                         "endOffsets": "2041"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\AndroidStudioProjects\\TextRecognition\\app\\build\\intermediates\\res\\merged\\debug\\values-en-rIN_values-en-rIN.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\GCrown\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\f158e80dee7c7bf1f0cf574d40a98d03\\res\\values-en-rIN\\values-en-rIN.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,209,309,417,501,601,716,793,869,951,1054,1158,1257,1362,1465,1569,1725,1825",
+                        "endColumns": "103,99,107,83,99,114,76,75,81,102,103,98,104,102,103,155,99,81",
+                        "endOffsets": "204,304,412,496,596,711,788,864,946,1049,1153,1252,1357,1460,1564,1720,1820,1902"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\GCrown\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\0ba0d93f8f79d23f73fe7613b0e1b83c\\res\\values-en-rIN\\values-en-rIN.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "1907",
+                        "endColumns": "100",
+                        "endOffsets": "2003"
                     }
                 }
             ]
@@ -1098,6 +1098,21 @@
             ]
         },
         {
+            "outputFile": "C:\\AndroidStudioProjects\\TextRecognition\\app\\build\\intermediates\\res\\merged\\debug\\values-night-v8_values-night-v8.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\GCrown\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\f158e80dee7c7bf1f0cf574d40a98d03\\res\\values-night-v8\\values-night-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,209,293,389,491,593",
+                        "endColumns": "69,83,83,95,101,101,93",
+                        "endOffsets": "120,204,288,384,486,588,682"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "C:\\AndroidStudioProjects\\TextRecognition\\app\\build\\intermediates\\res\\merged\\debug\\values-sl_values-sl.arsc.flat",
             "map": [
                 {
@@ -1125,21 +1140,6 @@
                         "startOffsets": "1990",
                         "endColumns": "100",
                         "endOffsets": "2086"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\AndroidStudioProjects\\TextRecognition\\app\\build\\intermediates\\res\\merged\\debug\\values-night-v8_values-night-v8.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\GCrown\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\f158e80dee7c7bf1f0cf574d40a98d03\\res\\values-night-v8\\values-night-v8.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,125,209,293,389,491,593",
-                        "endColumns": "69,83,83,95,101,101,93",
-                        "endOffsets": "120,204,288,384,486,588,682"
                     }
                 }
             ]

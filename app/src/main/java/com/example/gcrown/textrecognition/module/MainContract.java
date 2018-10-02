@@ -24,4 +24,10 @@ public interface MainContract {
         void getRecognitionResultByImage(Bitmap bitmap);
     }
 
+    interface TranslateCallback{
+         void onTranslateDone(String result);
+    }
+
 }
+
+

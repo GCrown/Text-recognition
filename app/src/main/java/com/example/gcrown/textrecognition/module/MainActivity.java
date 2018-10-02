@@ -19,6 +19,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -42,7 +43,8 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
     private Context mContext;
 
     private ImageView imageView;
-    private TextView textView;
+    private EditText editText;
+    private TextView textView1;
     private Button button;
 
     private MainPresenter mPresenter;
@@ -58,7 +60,8 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
         setContentView(R.layout.activity_main);
         mContext = this;
         imageView = findViewById(R.id.imageView);
-        textView = findViewById(R.id.textView);
+        editText = findViewById(R.id.textView);
+        textView1 = findViewById(R.id.textView1);
         button = findViewById(R.id.button);
         mPresenter = new MainPresenter(this);
 
@@ -72,14 +75,34 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
             }
         });
 
+        /*MainContract.TranslateCallback translateCallback = new MainContract.TranslateCallback() {
+            @Override
+            public void onTranslateDone(String result) {
+                Log.e("wasd",result);
+                Log.e("wasd","66666666");
+                textView1.setText(result);
+                // result是翻译结果，在这里使用翻译结果，比如使用对话框显示翻译结果
+            }
+        };
+        new TranslateUtil().translate(MainActivity.this, "auto", "en", "待翻译内容", translateCallback);*/
 
     }
 
+
     @Override
     public void updateUI(String s) {
-        textView.setText(s);
-        Log.e("onext",s);
-        Log.e("onext","wasd");
+        editText.setText(s);
+        MainContract.TranslateCallback translateCallback = new MainContract.TranslateCallback() {
+            @Override
+            public void onTranslateDone(String result) {
+                Log.e("wasd",result);
+                Log.e("wasd","66666666");
+                textView1.setText(result);
+                // result是翻译结果，在这里使用翻译结果，比如使用对话框显示翻译结果
+            }
+        };
+        new TranslateUtil().translate(MainActivity.this, "auto", "en", s, translateCallback);
+
     }
 
     private void takePhoto(){
@@ -149,5 +172,9 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
                 imageView.setImageBitmap(photo);
         }
     }
+
+
+
+
 
 }
