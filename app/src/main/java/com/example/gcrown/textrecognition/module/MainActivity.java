@@ -42,9 +42,9 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
 
     private Context mContext;
 
-    private ImageView imageView;
+    private ImageView imageView,conversion,translation,reset;
     private EditText editText;
-    private TextView textView1;
+    private TextView textView,cn,en;
     private Button button;
 
     private MainPresenter mPresenter;
@@ -60,8 +60,13 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
         setContentView(R.layout.activity_main);
         mContext = this;
         imageView = findViewById(R.id.imageView);
-        editText = findViewById(R.id.textView);
-        textView1 = findViewById(R.id.textView1);
+        conversion = findViewById(R.id.conversion);
+        translation = findViewById(R.id.translation);
+        reset = findViewById(R.id.reset);
+        editText = findViewById(R.id.editview);
+        textView = findViewById(R.id.textView);
+        en = findViewById(R.id.en);
+        cn = findViewById(R.id.cn);
         button = findViewById(R.id.button);
         mPresenter = new MainPresenter(this);
 
@@ -75,17 +80,55 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
             }
         });
 
-        /*MainContract.TranslateCallback translateCallback = new MainContract.TranslateCallback() {
+        conversion.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onTranslateDone(String result) {
-                Log.e("wasd",result);
-                Log.e("wasd","66666666");
-                textView1.setText(result);
-                // result是翻译结果，在这里使用翻译结果，比如使用对话框显示翻译结果
-            }
-        };
-        new TranslateUtil().translate(MainActivity.this, "auto", "en", "待翻译内容", translateCallback);*/
+            public void onClick(View v) {
+                 String a = cn.getText().toString();
+                 String b = en.getText().toString();
+                 String c = "中文";
+                if (a.equals(c)) {
+                    cn.setText("英文");
+                    en.setText("中文");
+                }if (b.equals(c)){
+                    cn.setText("中文");
+                    en.setText("英文");
+                }
 
+            }
+        });
+
+        translation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String s = editText.getText().toString();
+                MainContract.TranslateCallback translateCallback = new MainContract.TranslateCallback() {
+                    @Override
+                    public void onTranslateDone(String result) {
+                        Log.e("wasd",result);
+                        Log.e("wasd","66666666");
+                        textView.setText(result);
+                        // result是翻译结果，在这里使用翻译结果，比如使用对话框显示翻译结果
+                    }
+                };
+                String a = cn.getText().toString();
+                String b = en.getText().toString();
+                String c = "中文";
+                if (a.equals(c)) {
+                    new TranslateUtil().translate(MainActivity.this, "auto", "cn", s, translateCallback);
+                }if (b.equals(c)){
+                    new TranslateUtil().translate(MainActivity.this, "auto", "en", s, translateCallback);
+                }
+
+            }
+        });
+
+        reset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                editText.setText("");
+                textView.setText("");
+            }
+        });
     }
 
 
@@ -97,11 +140,21 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
             public void onTranslateDone(String result) {
                 Log.e("wasd",result);
                 Log.e("wasd","66666666");
-                textView1.setText(result);
+                textView.setText(result);
                 // result是翻译结果，在这里使用翻译结果，比如使用对话框显示翻译结果
             }
         };
-        new TranslateUtil().translate(MainActivity.this, "auto", "en", s, translateCallback);
+        String a = cn.getText().toString();
+        String b = en.getText().toString();
+        String c = "中文";
+        if (a.equals(c)) {
+            new TranslateUtil().translate(MainActivity.this, "auto", "cn", s, translateCallback);
+        }if (b.equals(c)){
+            new TranslateUtil().translate(MainActivity.this, "auto", "en", s, translateCallback);
+        }
+
+
+
 
     }
 
@@ -172,8 +225,6 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
                 imageView.setImageBitmap(photo);
         }
     }
-
-
 
 
 

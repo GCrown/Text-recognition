@@ -2,83 +2,63 @@
 <instant-run
     abi="armeabi-v7a,armeabi"
     api-level="22"
-    build-mode="FULL"
+    build-mode="COLD"
     density="xhdpi"
     format="10"
-    plugin-version="3.1.4"
-    timestamp="1538491798274"
+    ir-eligibility="COMPATIBLE"
+    plugin-version="3.2.0"
+    timestamp="1539012302939"
     token="3222225023512414822"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="1634" />
+        duration="148" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="185" />
+        duration="31" />
     <task
         name="verifier"
-        duration="73" />
+        duration="15" />
 
-    <artifact
-        location="C:\AndroidStudioProjects\TextRecognition\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\AndroidStudioProjects\TextRecognition\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
-        type="SPLIT_MAIN" />
-    <artifact
-        location="C:\AndroidStudioProjects\TextRecognition\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\AndroidStudioProjects\TextRecognition\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
-        type="SPLIT" />
     <artifact
         location="C:\AndroidStudioProjects\TextRecognition\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
         type="SPLIT" />
     <artifact
-        location="C:\AndroidStudioProjects\TextRecognition\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\AndroidStudioProjects\TextRecognition\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\AndroidStudioProjects\TextRecognition\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\AndroidStudioProjects\TextRecognition\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\AndroidStudioProjects\TextRecognition\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\AndroidStudioProjects\TextRecognition\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\AndroidStudioProjects\TextRecognition\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
-        type="SPLIT" />
+        location="C:\AndroidStudioProjects\TextRecognition\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1538491798274"
+        timestamp="1539011807653"
         verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="C:\AndroidStudioProjects\TextRecognition\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\AndroidStudioProjects\TextRecognition\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
-            type="SPLIT_MAIN" />
-        <artifact
-            location="C:\AndroidStudioProjects\TextRecognition\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
-            type="SPLIT" />
         <artifact
             location="C:\AndroidStudioProjects\TextRecognition\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
         <artifact
+            location="C:\AndroidStudioProjects\TextRecognition\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+        <artifact
             location="C:\AndroidStudioProjects\TextRecognition\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
+        <artifact
+            location="C:\AndroidStudioProjects\TextRecognition\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\AndroidStudioProjects\TextRecognition\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\AndroidStudioProjects\TextRecognition\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\AndroidStudioProjects\TextRecognition\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\AndroidStudioProjects\TextRecognition\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+            type="SPLIT_MAIN" />
         <artifact
             location="C:\AndroidStudioProjects\TextRecognition\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
@@ -89,17 +69,20 @@
             location="C:\AndroidStudioProjects\TextRecognition\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="C:\AndroidStudioProjects\TextRecognition\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\AndroidStudioProjects\TextRecognition\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
-            type="SPLIT" />
-        <artifact
             location="C:\AndroidStudioProjects\TextRecognition\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="COMPATIBLE"
+        timestamp="1539012302939"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="C:\AndroidStudioProjects\TextRecognition\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            location="C:\AndroidStudioProjects\TextRecognition\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
+        <artifact
+            location="C:\AndroidStudioProjects\TextRecognition\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>
