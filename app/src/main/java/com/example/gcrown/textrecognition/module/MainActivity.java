@@ -17,10 +17,14 @@ import android.support.v4.content.FileProvider;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.example.gcrown.textrecognition.R;
@@ -46,6 +50,7 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
     private EditText editText;
     private TextView textView,cn,en;
     private Button button;
+    private LinearLayout main,main1;
 
     private MainPresenter mPresenter;
     File mTmpFile;
@@ -64,11 +69,68 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
         translation = findViewById(R.id.translation);
         reset = findViewById(R.id.reset);
         editText = findViewById(R.id.editview);
+        editText.setOnFocusChangeListener(onFocusChangeListener);
         textView = findViewById(R.id.textView);
         en = findViewById(R.id.en);
         cn = findViewById(R.id.cn);
         button = findViewById(R.id.button);
         mPresenter = new MainPresenter(this);
+        main = findViewById(R.id.main);
+        main1 = findViewById(R.id.main1);
+        main1.setOnTouchListener(onTouchListener);
+        main.setOnTouchListener(onTouchListener);
+        translation.setOnTouchListener(onTouchListener);
+        translation.setVisibility(View.GONE);
+        reset.setVisibility(View.GONE);
+        Click();
+    }
+
+    //使 EditText 之外的布局获得焦点，并隐藏软键盘
+    private View.OnTouchListener onTouchListener = new View.OnTouchListener() {
+        @Override
+        public boolean onTouch(View v, MotionEvent event) {
+                main.setFocusable(true);
+                main.setFocusableInTouchMode(true);
+                main.requestFocus();
+                InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+                imm.hideSoftInputFromWindow(main.getWindowToken(), 0);
+                return false;
+        }
+    };
+
+    //点击 EditText 获得焦点时隐藏提示文字
+    private View.OnFocusChangeListener onFocusChangeListener = new View.OnFocusChangeListener() {
+
+        @Override
+        public void onFocusChange(View v, boolean hasFocus) {
+
+            switch (v.getId()) {
+                case R.id.editview:
+                    setHintEt(editText,hasFocus);
+                    break;
+            }
+        }
+    };
+
+    private void setHintEt(EditText et,boolean hasFocus){
+        String hint;
+        if(hasFocus){
+            hint = et.getHint().toString();
+            et.setTag(hint);
+            et.setHint("");
+            translation.setVisibility(View.VISIBLE);
+            reset.setVisibility(View.VISIBLE);
+        }else{
+            hint = et.getTag().toString();
+            et.setHint(hint);
+            translation.setVisibility(View.GONE);
+            reset.setVisibility(View.GONE);
+        }
+    }
+
+
+
+    public void Click() {
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -83,13 +145,14 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
         conversion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                 String a = cn.getText().toString();
-                 String b = en.getText().toString();
-                 String c = "中文";
+                String a = cn.getText().toString();
+                String b = en.getText().toString();
+                String c = "中文";
                 if (a.equals(c)) {
                     cn.setText("英文");
                     en.setText("中文");
-                }if (b.equals(c)){
+                }
+                if (b.equals(c)) {
                     cn.setText("中文");
                     en.setText("英文");
                 }
@@ -104,8 +167,8 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
                 MainContract.TranslateCallback translateCallback = new MainContract.TranslateCallback() {
                     @Override
                     public void onTranslateDone(String result) {
-                        Log.e("wasd",result);
-                        Log.e("wasd","66666666");
+                        Log.e("wasd", result);
+                        Log.e("wasd", "66666666");
                         textView.setText(result);
                         // result是翻译结果，在这里使用翻译结果，比如使用对话框显示翻译结果
                     }
@@ -115,7 +178,8 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
                 String c = "中文";
                 if (a.equals(c)) {
                     new TranslateUtil().translate(MainActivity.this, "auto", "cn", s, translateCallback);
-                }if (b.equals(c)){
+                }
+                if (b.equals(c)) {
                     new TranslateUtil().translate(MainActivity.this, "auto", "en", s, translateCallback);
                 }
 
@@ -130,6 +194,7 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
             }
         });
     }
+
 
 
     @Override
