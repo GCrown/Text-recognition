@@ -41,7 +41,9 @@ public class TranslateUtil extends AppCompatActivity implements MainContract {
      * @return ""为翻译失败，其余成功
      */
     public void translate(Context context, String sourceLan, String targetLan, String content, MainContract.TranslateCallback callback) {
+
         TranslateTask task = new TranslateTask(context, sourceLan, targetLan, content, callback);
+
         task.executeOnExecutor(Executors.newCachedThreadPool());
     }
 

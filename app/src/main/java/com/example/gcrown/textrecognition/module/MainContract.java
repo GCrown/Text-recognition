@@ -28,6 +28,10 @@ public interface MainContract {
          void onTranslateDone(String result);
     }
 
+    interface HistoryRecord{
+        void historyRecord(String r);
+    }
+
 }
 
 

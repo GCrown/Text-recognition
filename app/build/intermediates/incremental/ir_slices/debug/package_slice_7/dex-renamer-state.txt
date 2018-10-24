@@ -1,4 +1,4 @@
-#Mon Oct 08 17:05:09 CST 2018
+#Tue Oct 16 22:18:05 CST 2018
 base.0=C\:\\AndroidStudioProjects\\TextRecognition\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\7
 path.0=classes.dex
 renamed.0=classes.dex

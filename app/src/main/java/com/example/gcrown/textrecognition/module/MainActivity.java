@@ -26,6 +26,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.gcrown.textrecognition.R;
 
@@ -46,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
 
     private Context mContext;
 
-    private ImageView imageView,conversion,translation,reset;
+    private ImageView imageView,conversion,translation,reset,photo,record,collection;
     private EditText editText;
     private TextView textView,cn,en;
     private Button button;
@@ -67,21 +68,25 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
         imageView = findViewById(R.id.imageView);
         conversion = findViewById(R.id.conversion);
         translation = findViewById(R.id.translation);
+        photo = findViewById(R.id.photo);
         reset = findViewById(R.id.reset);
+        record = findViewById(R.id.record);
+        collection = findViewById(R.id.collection);
         editText = findViewById(R.id.editview);
         editText.setOnFocusChangeListener(onFocusChangeListener);
         textView = findViewById(R.id.textView);
         en = findViewById(R.id.en);
         cn = findViewById(R.id.cn);
-        button = findViewById(R.id.button);
         mPresenter = new MainPresenter(this);
         main = findViewById(R.id.main);
         main1 = findViewById(R.id.main1);
         main1.setOnTouchListener(onTouchListener);
         main.setOnTouchListener(onTouchListener);
         translation.setOnTouchListener(onTouchListener);
+        textView.setOnTouchListener(onTouchListener);
         translation.setVisibility(View.GONE);
         reset.setVisibility(View.GONE);
+        textView.setVisibility(View.GONE);
         Click();
     }
 
@@ -132,7 +137,7 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
 
     public void Click() {
 
-        button.setOnClickListener(new View.OnClickListener() {
+        photo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 takePhoto();
@@ -170,6 +175,8 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
                         Log.e("wasd", result);
                         Log.e("wasd", "66666666");
                         textView.setText(result);
+                        textView.setVisibility(View.VISIBLE);
+                        FileStorage.saveFileToSDCardPrivateFilesDir(result,null,"wasd.txt",MainActivity.this);
                         // result是翻译结果，在这里使用翻译结果，比如使用对话框显示翻译结果
                     }
                 };
@@ -182,6 +189,12 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
                 if (b.equals(c)) {
                     new TranslateUtil().translate(MainActivity.this, "auto", "en", s, translateCallback);
                 }
+                if (s.equals("")) {
+                    Toast.makeText(MainActivity.this,"wasd",Toast.LENGTH_LONG).show();
+                }
+                //byte[] srtbyte = s.getBytes();
+                Log.e("WASD","000000000");
+                FileStorage.saveFileToSDCardPrivateFilesDir(s,null,"wasd.txt",MainActivity.this);
 
             }
         });
@@ -191,6 +204,27 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
             public void onClick(View v) {
                 editText.setText("");
                 textView.setText("");
+                textView.setVisibility(View.GONE);
+
+
+            }
+        });
+
+        record.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Record.class);
+                startActivity(intent);
+                //new Record().readFileData(null,"wasd.txt",MainActivity.this);
+            }
+        });
+
+        collection.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Collention.class);
+                startActivity(intent);
+                //new Record().readFileData(null,"wasd.txt",MainActivity.this);
             }
         });
     }
@@ -199,6 +233,7 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
 
     @Override
     public void updateUI(String s) {
+        //拍照返回结果：s
         editText.setText(s);
         MainContract.TranslateCallback translateCallback = new MainContract.TranslateCallback() {
             @Override
@@ -206,6 +241,8 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
                 Log.e("wasd",result);
                 Log.e("wasd","66666666");
                 textView.setText(result);
+                textView.setVisibility(View.VISIBLE);
+                FileStorage.saveFileToSDCardPrivateFilesDir(result,null,"wasd.txt",MainActivity.this);
                 // result是翻译结果，在这里使用翻译结果，比如使用对话框显示翻译结果
             }
         };
@@ -217,7 +254,6 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
         }if (b.equals(c)){
             new TranslateUtil().translate(MainActivity.this, "auto", "en", s, translateCallback);
         }
-
 
 
 
